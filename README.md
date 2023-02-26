@@ -14,20 +14,31 @@ You also need a [Rclone](https://rclone.org/) crypted instance: a Blackblaze pub
 
 ## Installation
 
-1. Clone this repository: `git clone https://github.com/Renzodef/Rclone-Decrypt-Express`
-2. Install the dependencies with: `npm install`
-3. Edit the parameters of the file .env with your Rclone crypted instance password and salt: you can find them in the rclone.conf file as "password1" and "password2" in the section of your crypted instance.
+- Open a terminal or command prompt.
+- Clone this repository:
+```bash
+git clone https://github.com/Renzodef/Rclone-Decrypt-Express
+```
+- Navigate to the root directory of the cloned repository:
+```bash
+cd Rclone-Decrypt-Express
+```
+- Install the dependencies:
+```bash
+npm install
+```
+- Set the parameters of the file .env using your Rclone crypted instance password and salt: you can find them in the rclone.conf file as "password1" and "password2" in the section of your crypted instance.
 
 ## Usage
 - Open a terminal or command prompt.
 - Navigate to the root directory of this project.
-- Start the server with:<br>
+- Start the server:<br>
 ```bash
 npm start
 ```
-- Open the browser (Chrome based browsers are recommended) and add to the base url of the service (localhost:3000 if you are trying in a local environment) the "fileUrl" parameter (the public download URL of one of your remote hosted Rclone crypted files). For example:<br>
+- Open the browser (Chrome based browsers are recommended) and add to the base url of the service (localhost:3000 if you are trying in a local environment) the "fileUrl" parameter (the public download URL of one of your remote hosted Rclone crypted files):<br>
 [http://localhost:3000/?fileUrl=your_file_url](http://localhost:3000/?fileUrl=your_file_url)
-- The server will remain open also when you close the logs, so to stop the server you can use:<br>
+- To stop the server:<br>
 ```bash
 npm stop
 ```
